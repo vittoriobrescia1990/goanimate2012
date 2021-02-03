@@ -1,0 +1,1259 @@
+<html><head><script type="text/javascript" async="" src="https://web.archive.org/web/20130612193746/http://doug1izaerwt3.cloudfront.net/d6e9ca5d19bda4afea55a1493af00d0b98c26240.1.js"></script><script type="text/javascript" async="" src="https://web.archive.org/web/20130612193746/http://i.kissmetrics.com/i.js"></script><script type="text/javascript" async="" src="https" web.archive.org="" web="" 20130612193746="" http:="" doug1izaerwt3.cloudfront.net="" d6e9ca5d19bda4afea55a1493af00d0b98c26240.1.js"=""></script><script type="text/javascript" async="" src="//web.archive.org/web/20130612193746/http://i.kissmetrics.com/i.js"></script><script type="text/javascript" class="__REQUESTLY__SCRIPT">(function(namespace) {
+  window[namespace] = window[namespace] || {};
+  window[namespace].responseRules = {};
+
+  let open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function(method) {
+    this.addEventListener('readystatechange', function() {
+      if (this.readyState === 4 && window[namespace].responseRules.hasOwnProperty(this.responseURL)) {
+        const responseRule = window[namespace].responseRules[this.responseURL];
+        const {response, id} = responseRule;
+        const responseType = this.responseType;
+        let customResponse;
+
+        customResponse = response.type === 'code' ? responseRule.evaluator({
+            method,
+            url: this.responseURL,
+            requestHeaders: this.requestHeaders,
+            requestData: this.requestData,
+            responseType: this.responseType,
+            response: this.response
+          }) : response.value;
+
+        Object.defineProperty(this, 'response', {
+          get: function () {
+            if (response.type === 'static' && responseType === 'json') {
+              return JSON.parse(customResponse);
+            }
+            return customResponse;
+          }
+        });
+
+        if (responseType === '' || responseType === 'text') {
+          Object.defineProperty(this, 'responseText', {
+            get: function () {
+              return customResponse;
+            }
+          });
+        }
+
+        window.postMessage({
+          from: 'requestly',
+          type: 'response_rule_applied',
+          id
+        }, window.location.href);
+      }
+    }, false);
+    open.apply(this, arguments);
+  };
+
+  let send = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function(data) {
+    this.requestData = data;
+    send.apply(this, arguments);
+  };
+
+  let setRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
+  XMLHttpRequest.prototype.setRequestHeader = function(header, value) {
+    this.requestHeaders = this.requestHeaders || {};
+    this.requestHeaders[header] = value;
+    setRequestHeader.apply(this, arguments);
+  }
+})('__REQUESTLY__')</script><script src="https://archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app56.us.archive.org';v.server_ms=1105;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=SOX25l-I" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://goanimate.com/","20130612193746","http://web.archive.org/","web","/_static/",
+	      "1371065866");
+</script>
+<link rel="stylesheet" type="text/css" href="http://web.archive.org/web/20121011215040/http://goanimate.com/_static/css/banner-styles.css?v=bsmaklHF">
+<link rel="stylesheet" type="text/css" href="http://web.archive.org/web/20121011215040/http://goanimate.com/_static/css/iconochive.css?v=qtvMKcIJ">
+<!-- End Wayback Rewrite JS Include -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Make a Video.  Amazing Animated Video Maker - GoAnimate.</title>
+
+<meta property="og:site_name" content="GoAnimate">
+<meta property="fb:app_id" content="177116303202">
+<meta name="description" content="Make a video online for free with GoAnimate! Make videos for YouTube and Facebook, create fun and educational videos, make animated e-cards and more!">
+
+<meta name="google-site-verification" content="K_niiTfCVi72gwvxK00O4NjsVybMutMUnc-ZnN6HUuA">
+
+<link rel="canonical" href="http://goanimate.com/">
+<link rel="alternate" href="http://feeds.feedburner.com/GoAnimate" type="application/rss+xml" title="GoAnimate Blog">
+<link rel="alternate" href="http://feeds.feedburner.com/GoAnimate/WhatsNew" type="application/rss+xml" title="GoAnimate - Recently Released Content">
+<link rel="alternate" href="http://feeds.feedburner.com/GoAnimate/MostWatched" type="application/rss+xml" title="GoAnimate - Most Watched">
+
+<link href="http://web.archive.org/web/20130612193746cs_/http://lightspeed.goanimate.com/static/420/go/css/global.css" rel="stylesheet" type="text/css">
+<link href="http://web.archive.org/web/20130612193746cs_/http://lightspeed.goanimate.com/static/420/go/css/site.css" rel="stylesheet" type="text/css">
+<link href="http://web.archive.org/web/20130612193746cs_/http://lightspeed.goanimate.com/static/420/go/css/bootstrap/bootstrap-migrate.css" rel="stylesheet" type="text/css">
+
+<link href="http://web.archive.org/web/20130612193746cs_/http://lightspeed.goanimate.com/static/420/go/css/overlay.css" rel="stylesheet" type="text/css">
+<link href="http://web.archive.org/web/20130612193746cs_/http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Glegoo" rel="stylesheet" type="text/css">
+<link href="http://web.archive.org/web/20130612193746cs_/http://lightspeed.goanimate.com/static/420/go/css/buttons.css" rel="stylesheet" type="text/css">
+<link href="http://web.archive.org/web/20130612193746cs_/http://lightspeed.goanimate.com/static/420/go/css/index.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><link href="/static/go/css/ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 7]><style type="text/css">div.header {z-index: 10;}</style><![endif]-->
+
+<script type="text/javascript">
+var srv_tz_os = -4, view_name = "go", user_cookie_name = "u_info";
+</script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/prototype.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/jquery/jquery-1.8.3.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script src="http://web.archive.org/web/20130612193746js_/http://www.google.com/jsapi"></script>
+
+<script src="//web.archive.org/web/20130612193746js_/http://cdn.optimizely.com/js/4554059.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/optimizely/event_track.js"></script>
+
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/go2.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/overlay.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/jquery/jquery.swfobject.min.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/jquery/jquery.blockUI.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/cookie.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/Gettext.js"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/po/goserver_js-en_US.json"></script>
+<script type="text/javascript">
+jQuery.flash.expressInstall = "http://web.archive.org/web/20121011215040/http://goanimate.com/static/libs/expressInstall.swf";
+
+var I18N_LANG = 'en_US';
+var GT = new Gettext({'locale_data': json_locale_data});
+</script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/jquery/jquery.infieldlabel.min.js"></script>
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/index.js"></script>
+
+<script src="http://web.archive.org/web/20130612193746js_/http://lightspeed.goanimate.com/static/420/go/js/bootstrap/bootstrap-migrate.js"></script>
+
+
+<!-- GoAnimate_Footer_ROS_Bottom_960x284 -->
+<script type="text/javascript" src="http://web.archive.org/web/20130612193746js_/http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-9090384317741239");
+GS_googleEnableAllServices();
+</script><script src="http://partner.googleadservices.com/gampad/google_ads.js"></script>
+<script type="text/javascript">
+GA_googleAddAttr("is_login", "no");
+GA_googleAddAttr("is_plus", "no");
+GA_googleAddAttr("is_creator", "no");
+</script>
+<script type="text/javascript">
+GA_googleAddSlot("ca-pub-9090384317741239", "GoAnimate_Footer_ROS_Bottom_960x284");
+GA_googleAddSlot("ca-pub-9090384317741239", "");
+</script>
+<script type="text/javascript">
+GA_googleFetchAds();
+</script>
+<style type="text/css">div.footerad div {height:284px;}</style>
+<!-- GoAnimate_Footer_ROS_Bottom_960x284 -->
+
+</head>
+<body class="en_US" onresize="reloadNowGlobal();reloadNow();">
+<div id="fb-root" class=" fb_reset"><script async="" src="http://web.archive.org/web/20130612193746/http://connect.facebook.net/en_US/all.js"></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="http://web.archive.org/web/20130612193746if_/http://static.ak.facebook.com/connect/xd_arbiter.php?version=24#channel=f165e64b6e32258&amp;origin=http%3A%2F%2Fgoanimate.com&amp;channel_path=%2F%3Ffb_xd_fragment%23xd_sig%3Df3984e196ca697e%26" style="border: none;" allow="autoplay 'self'; fullscreen 'self'"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="http://web.archive.org/web/20130612193746if_/https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=24#channel=f165e64b6e32258&amp;origin=http%3A%2F%2Fgoanimate.com&amp;channel_path=%2F%3Ffb_xd_fragment%23xd_sig%3Df3984e196ca697e%26" style="border: none;" allow="autoplay 'self'; fullscreen 'self'"></iframe></div></div><script async="" src="https:https://web.archive.org/web/20130612193746/http://connect.facebook.net/en_US/all.js"></script></div>
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({appId: '177116303202', cookie: true, status: true, xfbml: true});
+    jQuery(document).ready(function() {
+      jQuery(document).trigger('facebook.init');
+    });
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      'https://web.archive.org/web/20130612193746/http://connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || 'd6e9ca5d19bda4afea55a1493af00d0b98c26240';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('https://web.archive.org/web/20130612193746/http://i.kissmetrics.com/i.js');
+  _kms('https://web.archive.org/web/20130612193746/http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+<script type="text/javascript">
+		jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"http:\/\/web.archive.org\/web\/20130612193746\/http:\/\/lightspeed.goanimate.com\/animation\/793\/actionshop.swf","apiserver":"http:\/\/web.archive.org\/web\/20130612193746\/http:\/\/goanimate.com\/","clientThemePath":"http:\/\/web.archive.org\/web\/20130612193746\/http:\/\/lightspeed.goanimate.com\/static\/420\/<client_theme>","userId":""});
+</script>
+<!-- HEADER -->
+<div id="header">
+	<div class="header-bg"></div>
+	<div class="header-inside">
+		<a class="site-logo" href="http://goanimate.com/" title="GoAnimate">
+			<img alt="Make a Video Online with GoAnimate.com" src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/header/make-video-goanimate.png">
+		</a>
+
+        <div id="headertopnavmenu" class="globalnav">
+	<ul id="top_nav" class="header_block">
+		<li class="top_nav_item create">
+			<a href="/go_full">Make a Video</a>
+		</li>
+		<li class="top_nav_item explore">
+			<a href="https://www.youtube.com/results?search_query=goanimate">Explore</a>
+			<ul class="top_nav_submenu">
+				<li class="first"><div class="arrow"></div><a href="https://www.youtube.com/results?search_query=goanimate">Videos</a></li>
+				<li><a href="http://goanimate.com/mingle">Community</a></li>
+				<li><a href="http://goanimate.com/forums">Forums</a></li>
+				<li><a href="https://www.youtube.com/results?search_query=goanimate+video+maker+tips">Video Maker Tips</a></li>
+				<li><a href="http://goanimate.com/search">Search</a></li>
+			</ul>
+		</li>
+		<li class="top_nav_item upgrade">
+			<a href="http://web.archive.org/web/20121012225258/http://goanimate.com/plusfeatures/?hook=header_button.site">Upgrade <img class="upgrade-arrow" src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/spacer.gif" alt=""></a>
+			<ul class="top_nav_submenu">
+				<li class="first"><div class="arrow"></div><a href="http://web.archive.org/web/20121012225258/http://goanimate.com/plusfeatures/?hook=header_button.site">GoPlus (For Personal Use)</a></li>
+				<li><a href="http://web.archive.org/web/20121012225258/http://goanimate.com/business">GoAnimate for Business</a></li>
+				<li><a href="http://goanimate4schools.herokuapp.com/">GoAnimate for Schools</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<div id="header_links" class="header_block">
+		<a class="header_login" href="https://app.vyond.com/logoff"><span>Logout</span></a>
+	</div>
+
+<!--[if lte IE 6]>
+<script type="text/javascript">
+jQuery('#top_nav li').bind('mouseover', function(e) {
+	jQuery(this).addClass('hover');
+});
+jQuery('#top_nav li').bind('mouseout', function(e) {
+	jQuery(this).removeClass('hover');
+});
+jQuery('.money').bind('mouseover', function(e) {
+	jQuery(this).addClass('hover');
+});
+jQuery('.money').bind('mouseout', function(e) {
+	jQuery(this).removeClass('hover');
+});
+</script>
+<![endif]-->
+        </div>
+	</div>
+</div>
+
+<div>
+
+<div class="container">
+
+    <div id="feedback_block" style="display:none;">
+	    <div id="feedback" align="center" class="info">
+			    </div>
+    </div>
+	<!-- END OF HEADER -->
+   </div>
+		</div>
+		<div class="warning">
+			Wellcome To GoAnimate 2012 online! feel free to make any video you like!!<br>
+		</div>
+	
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td>Video Title</td>
+				<td>Last Modified</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody></tbody>
+		<tfoot>
+			<tr>
+				<td colspan="127"></td>
+			</tr>
+		</tfoot>
+	</table>
+	<form enctype="multipart/form-data" action="/upload_movie" method="post">
+		<input id="file" type="file" onchange="this.form.submit()" name="import">
+	</form>
+	<script>
+		const closeReq = new XMLHttpRequest();
+		closeReq.open('GET', '/events/close');
+		closeReq.send();
+
+		var json;
+		var tbody = document.getElementsByTagName('tbody')[0];
+		var loadMore = document.getElementById('load_more');
+		const listReq = new XMLHttpRequest();
+		listReq.open('GET', '/movieList');
+		listReq.send();
+
+		var C = 0;
+		function loadRows() {
+			let c = C; C += 69;
+			for (; c < C; c++) {
+				if (c > json.length - 1) {
+					loadMore.remove();
+					break;
+				}
+
+				const tbl = json[c];
+				const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
+				tbody.insertAdjacentHTML('beforeend',
+					'<tr><td><img src="/movie_thumbs/' + tbl.id + '"></td><td><div>' + tbl.title + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date.match(/./g).join('</span><span>') + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/go_full?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+			}
+		}
+
+		loadMore.onclick = loadRows;
+		listReq.onreadystatechange = function (e) {
+			if (listReq.readyState != 4) return;
+			json = JSON.parse(listReq.responseText);
+			loadRows();
+		}
+
+		function popup(id) {
+			window.open('/player?movieId=' + id, 'MsgWindow', 'width=1280,height=720,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
+		}
+	</script>
+	<style>
+		html {
+			font-family: 'Sailec', Arial, sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			margin: 0;
+			background-color: #fff;
+			color: #474747;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.5;
+			position: relative;
+		}
+
+		header {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		header>:nth-child(1) {
+			height: 44px;
+			align-content: center;
+			background-color: #1e1e1e;
+			color: #fff;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+		}
+
+		header>:nth-child(1)>:nth-child(1) {
+			float: left;
+		}
+
+		header>:nth-child(1)>:nth-child(1)>:nth-child(1)>* {
+			margin-left: 10px;
+			margin-top: 7px;
+			height: 30px;
+		}
+
+		header>:nth-child(1)>:nth-child(2) {
+			margin-right: 20px;
+			float: right;
+		}
+
+		.button_big,
+		.button_small {
+			margin-left: 10px;
+			margin-top: 7px;
+			display: inline-block;
+			padding-top: 5px;
+			padding-bottom: 3px;
+			border-radius: 3px;
+			font-size: 14px;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.button_big {
+			background-color: #d85e27;
+			width: 160px;
+		}
+
+		.button_big:hover {
+			text-decoration: underline;
+		}
+
+		.button_small:hover {
+			color: #d85e27;
+		}
+
+		.button_big:hover,
+		.button_small:hover {
+			cursor: pointer;
+		}
+
+		.char_dropdown {
+			width: 200px;
+		}
+
+		.char_dropdown:hover>:nth-child(1) {
+			cursor: context-menu;
+			color: #d85e27;
+		}
+
+		.char_dropdown>menu {
+			position: relative;
+			display: none;
+			top: 100%;
+			left: 0;
+			z-index: 1000;
+			float: left;
+			width: 190px;
+			padding: 10px 0;
+			margin: 9px 0 0;
+			list-style: none;
+			font-size: 14px;
+			text-align: left;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			border-radius: 4px;
+			-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+		}
+
+		.char_dropdown:hover>menu {
+			display: block;
+		}
+
+		.char_dropdown>menu>a {
+			display: block;
+			padding: 2px 20px;
+			clear: both;
+			font-weight: normal;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.char_dropdown>menu>a:hover {
+			color: #d85e27;
+			background-color: #f5f5f5;
+		}
+
+		.char_dropdown>menu>div {
+			height: 1px;
+			margin: 10px 0;
+			background-color: #e5e5e5;
+		}
+
+		.warning {
+			font-size: 14px;
+			padding: 10px 0;
+			background-color: #fd7;
+			text-align: center;
+		}
+
+		.warning::before {
+			font-family: 'GlyphiconsRegular';
+			padding-right: 4px;
+			content: '\E079';
+			font-size: 12px;
+		}
+
+		.warning>a {
+			color: #5596e6;
+		}
+
+		table {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 127px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 127px;
+			background-color: transparent;
+			border-collapse: collapse;
+			border-spacing: 0;
+			font-size: 14px;
+		}
+
+		@media(min-width: 768px) {
+			table {
+				width: 750px;
+			}
+		}
+
+		@media(min-width: 992px) {
+			table {
+				width: 970px;
+			}
+		}
+
+		@media(min-width: 1200px) {
+			table {
+				width: 1170px;
+			}
+		}
+
+		thead {
+			font-weight: 200;
+		}
+
+		td {
+			padding: 8px;
+			vertical-align: middle;
+			line-height: 1.42857143;
+		}
+
+		thead {
+			border-bottom: 2px solid #ddd;
+			border-top: 1px solid #ddd;
+		}
+
+		tbody>tr {
+			border-top: 0;
+			border-bottom: 1px solid #ddd;
+		}
+
+		tbody>tr:hover {
+			background-color: #f5f5f5;
+		}
+
+		tr>:nth-child(1) {
+			width: 64px;
+		}
+
+		tr>:nth-child(1)>img {
+			height: 36px;
+		}
+
+		tr>:nth-child(1) {
+			word-break: break-word;
+		}
+
+		tr>:nth-child(2) {
+			color: #999;
+		}
+
+		tr>:nth-child(3) {
+			width: 250px;
+		}
+
+		tr>:nth-child(3)>* {
+			display: inline-block;
+			text-align: center;
+			font-size: 12px;
+			width: 8.5px;
+		}
+
+		tr>:nth-child(4) {
+			font-family: 'GlyphiconsRegular';
+			text-decoration: none;
+			padding-top: 5px;
+			font-size: 14px;
+			width: 80px;
+		}
+
+		tr>:nth-child(4)>a {
+			display: inline-block;
+			text-decoration: none;
+			padding-right: 10px;
+			color: #474747;
+		}
+
+		tr>:nth-child(4)>a:hover {
+			color: #d85e27;
+		}
+
+		tr>:nth-child(4)>:nth-child(1)::before {
+			content: '\E174';
+		}
+
+		tr>:nth-child(4)>:nth-child(2)::before {
+			content: '\E235';
+		}
+
+		tr>:nth-child(4)>:nth-child(3)::before {
+			content: '\E182';
+		}
+
+		tfoot>tr>td {
+			text-align: center;
+			border: none;
+		}
+
+		tfoot>tr>td>a {
+			text-decoration: none;
+			color: #474747;
+			font-size: 14px;
+		}
+
+		form {
+			display: none;
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 100;
+			src: url('./Sailec-Thin.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 200;
+			src: url('./Sailec-Light.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 400;
+			src: url('./Sailec-Regular.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 500;
+			src: url('./Sailec-Medium.woff') format('woff');
+		}
+
+		/* font weight 500 and font weight 700 (bold) are the same for better integration support */
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 700;
+			src: url('./Sailec-Medium.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'GlyphiconsRegular';
+			src: url('./glyphicons-regular.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
+<div class="nsc-panel nsc-panel-compact nsc-hide">
+    <div class="nsc-panel-move"></div>
+    <div class="nsc-panel-tooltip">
+        <div class="nsc-panel-tooltip-layout" layout="row" layout-align="start center">CTRL+V to toggle the panel</div>
+    </div>
+
+    <div class="nsc-panel-layout" flex="" layout="row" layout-align="start center">
+        <div class="nsc-panel-groups" flex="" layout="row" layout-align="start start">
+
+            <!-- group -->
+            <div class="nsc-panel-group" flex="none" layout="row" layout-align="start start">
+                <div class="nsc-panel-button separated active">
+                    <div class="nsc-panel-select" flex="" layout="row">
+                        <div class="nsc-panel-text nsc-noselect" flex="" layout="row" layout-align="center center">
+                            <span class="nsc-icon nsc-icon-cursor-normal" data-i18n="videoPanelSimpleCursor" data-event="nimbus-editor-active-tools" data-event-param="cursorDefault">Â&nbsp;</span>
+                        </div>
+                        <div class="nsc-panel-trigger">
+                            <span class="nsc-icon nsc-icon-arrow">Â&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="nsc-panel-dropdown to-top">
+                        <ul flex="" layout="row" layout-align="start center">
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-cursor-shade" data-i18n="videoPanelFocusMouse" data-event="nimbus-editor-active-tools" data-event-param="cursorShadow">Â&nbsp;</span>
+                            </li>
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-cursor-circle" data-i18n="videoPanelAnimatedCursor" data-event="nimbus-editor-active-tools" data-event-param="cursorRing">Â&nbsp;</span>
+                            </li>
+                            <!--<li class="nsc-panel-dropdown-icon " flex layout="row" layout-align="start center">-->
+                            <!--<span class="nsc-icon nsc-icon-cursor-tail"></span>-->
+                            <!--</li>-->
+                            <!--<li class="nsc-panel-dropdown-icon " flex layout="row" layout-align="start center">-->
+                            <!--<span class="nsc-icon nsc-icon-cursor-long"></span>-->
+                            <!--</li>-->
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-cursor-normal" data-i18n="videoPanelSimpleCursor" data-event="nimbus-editor-active-tools" data-event-param="cursorDefault">Â&nbsp;</span>
+                            </li>
+                            <!--<li class="nsc-panel-dropdown-icon" flex layout="row" layout-align="start center">-->
+                            <!--<span class="nsc-icon nsc-icon-cursor-none" data-event="nimbus-editor-active-tools" data-event-param="cursorNone"></span>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /group -->
+
+            <!-- group -->
+            <div class="nsc-panel-group" flex="none" layout="row" layout-align="start start">
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-pen" data-i18n="videoPanelPen" data-event="nimbus-editor-active-tools" data-event-param="pen">Â&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-arrow-line" data-i18n="videoPanelArrow" data-event="nimbus-editor-active-tools" data-event-param="arrow">Â&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-square" data-i18n="videoPanelSquare" data-event="nimbus-editor-active-tools" data-event-param="square">Â&nbsp;</span>
+                </button>
+                <div class="nsc-panel-button separated">
+                    <div class="nsc-panel-select" flex="" layout="row">
+                        <div class="nsc-panel-text nsc-noselect" flex="" layout="row" layout-align="center center">
+                            <span class="nsc-icon nsc-icon-attention" data-i18n="videoPanelMark" data-event="nimbus-editor-active-tools" data-event-param="notifRed">Â&nbsp;</span>
+                        </div>
+                        <div class="nsc-panel-trigger">
+                            <span class="nsc-icon nsc-icon-arrow">Â&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="nsc-panel-dropdown to-top">
+                        <ul flex="" layout="row" layout-align="start center">
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-attention" data-i18n="videoPanelMark" data-event="nimbus-editor-active-tools" data-event-param="notifRed">Â&nbsp;</span>
+                            </li>
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-question" data-i18n="videoPanelQuestion" data-event="nimbus-editor-active-tools" data-event-param="notifBlue">Â&nbsp;</span>
+                            </li>
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-done" data-i18n="videoPanelCheckmark" data-event="nimbus-editor-active-tools" data-event-param="notifGreen">Â&nbsp;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nsc-panel-button assembled">
+                    <div class="nsc-panel-select" flex="" layout="row">
+                        <div class="nsc-panel-text nsc-noselect" flex="" layout="row" layout-align="center center">
+							<span class="nsc-icon nsc-icon-fill-none nsc-panel-icon-fill">
+								<span class="nsc-panel-icon-fill-inner" id="nsc_panel_button_colors" style="background:#00FF00;" data-event="nimbus-editor-active-color" data-event-param="#00FF00">Â&nbsp;</span>
+							</span>
+                        </div>
+                        <div class="nsc-panel-trigger">
+                            <span class="nsc-icon nsc-icon-arrow">Â&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="nsc-panel-dropdown">
+                        <div class="nsc-panel-drop-area">
+                            <div class="nsc-panel-colors">
+
+                                <!-- picked -->
+                                <div class="nsc-colors-picked">
+                                    <div class="nsc-colors-picked-layout" flex="" layout="row" layout-align="start start" layout-wrap="">
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#000000">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #000000;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#0000FF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #0000FF;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FF00FF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FF00FF;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#00FFFF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #00FFFF;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#00FF00">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #00FF00;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FFFF00">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FFFF00;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FF0000">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FF0000;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FFFFFF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FFFFFF;">Â&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <!--<div class="nsc-colors-picked-item">-->
+                                        <!--<button class="nsc-colors-picked-button custom" type="button"> -->
+                                        <!--<i class="nsc-icon ic-color-custom"></i> -->
+                                        <!--</button>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <!-- /picked -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /group -->
+
+            <!-- group -->
+            <div class="nsc-panel-group" flex="none" layout="row" layout-align="start start">
+                <button class="nsc-panel-button nsc-hide" type="button">
+                    <span class="nsc-icon nsc-icon-eraser" data-i18n="videoPanelClear" data-event="nimbus-editor-active-tools" data-event-param="clear">Â&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-eraser-all" data-i18n="videoPanelClearAll" data-event="nimbus-editor-active-tools" data-event-param="clearAll">Â&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-webcam" data-i18n="videoPanelCamera" id="nimbus_web_camera_toggle">Â&nbsp;</span>
+                </button>
+            </div>
+            <!-- /group -->
+        </div>
+
+        <div class="nsc-panel-actions" flex="none" layout="row" layout-align="start center">
+            <button class="nsc-panel-button big" type="button" id="nsc_panel_button_play" style="display: none;">
+                <span class="nsc-icon nsc-icon-play">Â&nbsp;</span>
+            </button>
+            <button class="nsc-panel-button big" type="button" id="nsc_panel_button_pause">
+                <span class="nsc-icon nsc-icon-pause">Â&nbsp;</span>
+            </button>
+            <button class="nsc-panel-button big" type="button" id="nsc_panel_button_stop">
+                <span class="nsc-icon nsc-icon-stop">Â&nbsp;</span>
+            </button>
+        </div>
+
+        <!-- panel togglers -->
+        <div class="nsc-panel-togglers" layout="row" layout-align="start center" flex="none">
+            <button class="nsc-panel-toggle-button" type="button">
+                <span class="nsc-icon nsc-icon-panel-close" data-i18n="videoPanelHideShowPanel">Â&nbsp;</span>
+            </button>
+        </div>
+        <!-- /panel togglers -->
+
+    </div>
+</div>
+<div class="nsc-video-editor nsc-hide"></div><div class="nsc-content-camera nsc-hide">
+    <div class="nsc-content-camera-buttons" flex="none" layout="row" layout-align="start start">
+        <button class="nsc-content-camera-button" type="button" id="nsc_video_camera_collapse" style="display: none">
+            <span class="nsc-icon nsc-icon-panel-collapse"></span>
+        </button>
+        <button class="nsc-content-camera-button" type="button" id="nsc_video_camera_expand">
+            <span class="nsc-icon nsc-icon-panel-expand"></span>
+        </button>
+        <button class="nsc-content-camera-button" type="button" id="nsc_video_camera_close">
+            <span class="nsc-icon nsc-icon-panel-close"></span>
+        </button>
+    </div>
+    <div class="nsc-content-camera-container">
+        <div class="nsc-content-camera-shadow"></div>
+    </div>
+</div>
+
+<div class="nsc-panel nsc-panel-compact nsc-hide">
+    <div class="nsc-panel-move"></div>
+    <div class="nsc-panel-tooltip">
+        <div class="nsc-panel-tooltip-layout" layout="row" layout-align="start center">CTRL+V to toggle the panel</div>
+    </div>
+
+    <div class="nsc-panel-layout" flex="" layout="row" layout-align="start center">
+        <div class="nsc-panel-groups" flex="" layout="row" layout-align="start start">
+
+            <!-- group -->
+            <div class="nsc-panel-group" flex="none" layout="row" layout-align="start start">
+                <div class="nsc-panel-button separated active">
+                    <div class="nsc-panel-select" flex="" layout="row">
+                        <div class="nsc-panel-text nsc-noselect" flex="" layout="row" layout-align="center center">
+                            <span class="nsc-icon nsc-icon-cursor-normal" data-i18n="videoPanelSimpleCursor" data-event="nimbus-editor-active-tools" data-event-param="cursorDefault">&nbsp;</span>
+                        </div>
+                        <div class="nsc-panel-trigger">
+                            <span class="nsc-icon nsc-icon-arrow">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="nsc-panel-dropdown to-top">
+                        <ul flex="" layout="row" layout-align="start center">
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-cursor-shade" data-i18n="videoPanelFocusMouse" data-event="nimbus-editor-active-tools" data-event-param="cursorShadow">&nbsp;</span>
+                            </li>
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-cursor-circle" data-i18n="videoPanelAnimatedCursor" data-event="nimbus-editor-active-tools" data-event-param="cursorRing">&nbsp;</span>
+                            </li>
+                            <!--<li class="nsc-panel-dropdown-icon " flex layout="row" layout-align="start center">-->
+                            <!--<span class="nsc-icon nsc-icon-cursor-tail"></span>-->
+                            <!--</li>-->
+                            <!--<li class="nsc-panel-dropdown-icon " flex layout="row" layout-align="start center">-->
+                            <!--<span class="nsc-icon nsc-icon-cursor-long"></span>-->
+                            <!--</li>-->
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-cursor-normal" data-i18n="videoPanelSimpleCursor" data-event="nimbus-editor-active-tools" data-event-param="cursorDefault">&nbsp;</span>
+                            </li>
+                            <!--<li class="nsc-panel-dropdown-icon" flex layout="row" layout-align="start center">-->
+                            <!--<span class="nsc-icon nsc-icon-cursor-none" data-event="nimbus-editor-active-tools" data-event-param="cursorNone"></span>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /group -->
+
+            <!-- group -->
+            <div class="nsc-panel-group" flex="none" layout="row" layout-align="start start">
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-pen" data-i18n="videoPanelPen" data-event="nimbus-editor-active-tools" data-event-param="pen">&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-arrow-line" data-i18n="videoPanelArrow" data-event="nimbus-editor-active-tools" data-event-param="arrow">&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-square" data-i18n="videoPanelSquare" data-event="nimbus-editor-active-tools" data-event-param="square">&nbsp;</span>
+                </button>
+                <div class="nsc-panel-button separated">
+                    <div class="nsc-panel-select" flex="" layout="row">
+                        <div class="nsc-panel-text nsc-noselect" flex="" layout="row" layout-align="center center">
+                            <span class="nsc-icon nsc-icon-attention" data-i18n="videoPanelMark" data-event="nimbus-editor-active-tools" data-event-param="notifRed">&nbsp;</span>
+                        </div>
+                        <div class="nsc-panel-trigger">
+                            <span class="nsc-icon nsc-icon-arrow">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="nsc-panel-dropdown to-top">
+                        <ul flex="" layout="row" layout-align="start center">
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-attention" data-i18n="videoPanelMark" data-event="nimbus-editor-active-tools" data-event-param="notifRed">&nbsp;</span>
+                            </li>
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-question" data-i18n="videoPanelQuestion" data-event="nimbus-editor-active-tools" data-event-param="notifBlue">&nbsp;</span>
+                            </li>
+                            <li class="nsc-panel-dropdown-icon" flex="" layout="row" layout-align="start center">
+                                <span class="nsc-icon nsc-icon-done" data-i18n="videoPanelCheckmark" data-event="nimbus-editor-active-tools" data-event-param="notifGreen">&nbsp;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nsc-panel-button assembled">
+                    <div class="nsc-panel-select" flex="" layout="row">
+                        <div class="nsc-panel-text nsc-noselect" flex="" layout="row" layout-align="center center">
+							<span class="nsc-icon nsc-icon-fill-none nsc-panel-icon-fill">
+								<span class="nsc-panel-icon-fill-inner" id="nsc_panel_button_colors" style="background:#00FF00;" data-event="nimbus-editor-active-color" data-event-param="#00FF00">&nbsp;</span>
+							</span>
+                        </div>
+                        <div class="nsc-panel-trigger">
+                            <span class="nsc-icon nsc-icon-arrow">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="nsc-panel-dropdown">
+                        <div class="nsc-panel-drop-area">
+                            <div class="nsc-panel-colors">
+
+                                <!-- picked -->
+                                <div class="nsc-colors-picked">
+                                    <div class="nsc-colors-picked-layout" flex="" layout="row" layout-align="start start" layout-wrap="">
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#000000">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #000000;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#0000FF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #0000FF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FF00FF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FF00FF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#00FFFF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #00FFFF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#00FF00">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #00FF00;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FFFF00">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FFFF00;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FF0000">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FF0000;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <div class="nsc-colors-picked-item">
+                                            <button class="nsc-colors-picked-button" type="button" data-event="nimbus-editor-active-color" data-event-param="#FFFFFF">
+                                                <span class="nsc-colors-picked-button-inner" style="background: #FFFFFF;">&nbsp;</span>
+                                            </button>
+                                        </div>
+                                        <!--<div class="nsc-colors-picked-item">-->
+                                        <!--<button class="nsc-colors-picked-button custom" type="button"> -->
+                                        <!--<i class="nsc-icon ic-color-custom"></i> -->
+                                        <!--</button>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <!-- /picked -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /group -->
+
+            <!-- group -->
+            <div class="nsc-panel-group" flex="none" layout="row" layout-align="start start">
+                <button class="nsc-panel-button nsc-hide" type="button">
+                    <span class="nsc-icon nsc-icon-eraser" data-i18n="videoPanelClear" data-event="nimbus-editor-active-tools" data-event-param="clear">&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-eraser-all" data-i18n="videoPanelClearAll" data-event="nimbus-editor-active-tools" data-event-param="clearAll">&nbsp;</span>
+                </button>
+                <button class="nsc-panel-button" type="button">
+                    <span class="nsc-icon nsc-icon-webcam" data-i18n="videoPanelCamera" id="nimbus_web_camera_toggle">&nbsp;</span>
+                </button>
+            </div>
+            <!-- /group -->
+        </div>
+
+        <div class="nsc-panel-actions" flex="none" layout="row" layout-align="start center">
+            <button class="nsc-panel-button big" type="button" id="nsc_panel_button_play">
+                <span class="nsc-icon nsc-icon-play">&nbsp;</span>
+            </button>
+            <button class="nsc-panel-button big" type="button" id="nsc_panel_button_pause">
+                <span class="nsc-icon nsc-icon-pause">&nbsp;</span>
+            </button>
+            <button class="nsc-panel-button big" type="button" id="nsc_panel_button_stop">
+                <span class="nsc-icon nsc-icon-stop">&nbsp;</span>
+            </button>
+        </div>
+
+        <!-- panel togglers -->
+        <div class="nsc-panel-togglers" layout="row" layout-align="start center" flex="none">
+            <button class="nsc-panel-toggle-button" type="button">
+                <span class="nsc-icon nsc-icon-panel-close" data-i18n="videoPanelHideShowPanel">&nbsp;</span>
+            </button>
+        </div>
+        <!-- /panel togglers -->
+
+    </div>
+</div>
+<div class="nsc-video-editor nsc-hide"></div><div class="nsc-content-camera nsc-hide">
+    <div class="nsc-content-camera-buttons" flex="none" layout="row" layout-align="start start">
+        <button class="nsc-content-camera-button" type="button" id="nsc_video_camera_collapse" style="display: none">
+            <span class="nsc-icon nsc-icon-panel-collapse"></span>
+        </button>
+        <button class="nsc-content-camera-button" type="button" id="nsc_video_camera_expand">
+            <span class="nsc-icon nsc-icon-panel-expand"></span>
+        </button>
+        <button class="nsc-content-camera-button" type="button" id="nsc_video_camera_close">
+            <span class="nsc-icon nsc-icon-panel-close"></span>
+        </button>
+    </div>
+    <div class="nsc-content-camera-container">
+        <div class="nsc-content-camera-shadow"></div>
+    </div>
+</div>
+
+
+  <!-- FOOTER -->
+<div style="clear:both"></div>
+
+
+<div id="footer">
+	<div class="footer-inside clearfix">
+		
+		<!-- As seen on press (now hidden) -->
+		<div class="as-seen-on clearfix" style="display:none">
+			<h4>As seen on:</h4>
+			<img src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/footer/img_logos_v2.jpg" alt="">
+		</div>
+		
+		<!-- Social Media Links (Don't show this on ContactUs page -->
+				<div class="social-links clearfix">
+			<a id="ftr-lnk-fb" class="ftr-social-lnk" target="_blank" href="http://www.facebook.com/pages/GoAnimate/75564782046"></a>
+			<a id="ftr-lnk-tw" class="ftr-social-lnk" target="_blank" href="http://twitter.com/GoAnimate"></a>
+			<a id="ftr-lnk-gg" class="ftr-social-lnk" target="_blank" href="https://plus.google.com/u/0/103491479125791900341"></a>
+			<a id="ftr-lnk-yt" class="ftr-social-lnk" target="_blank" href="http://www.youtube.com/user/GoAnimate"></a>
+			<a id="ftr-lnk-pt" class="ftr-social-lnk last" target="_blank" href="http://pinterest.com/goanimate/"></a>
+		</div>	
+		
+		<hr>
+				
+		<div id="footernav" class="clearfix">
+			<div class="col">
+				<h4><span>About GoAnimate</span></h4>
+				<ul>
+					<li><a href="http://goanimate.com/aboutus">Who we are</a></li>
+					<li><a href="http://goanimate.com/contactus">Contact Us</a></li>
+					<li><a href="http://goanimate.com/video-maker-tips">Blog</a></li>
+					<li><a href="http://goanimate.com/videocontest">Contests</a></li>
+					<li><a href="http://press.goanimate.com/">Press</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h4><span>GoAnimate Solutions</span></h4>
+				<ul>
+					<li><a href="http://web.archive.org/web/20121012225258/http://goanimate.com/business">GoAnimate for Business</a></li>
+					<li><a href="http://goanimate4schools.herokuapp.com/" target="_blank">GoAnimate for Schools</a></li>
+					<li><a href="http://goanimate.com/affiliate" target="_blank">Affiliates Program</a></li>
+									<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div class="col" style="border:none">
+				<h4><span>Usage Guidelines</span></h4>
+				<ul>
+					<li><a href="http://goanimate.com/termsofuse">Terms of Use for Everyone</a></li>
+					<li><a href="http://goanimate.com/business/termsofuse">Additional Terms for Businesses</a></li>
+					<li><a href="http://goanimate.com/legal">Legal Notices</a></li>
+					<li><a href="http://goanimate.com/privacy">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col last">
+				<h4>Getting Help</h4>
+				<ul>
+					<li><a href="http://goanimate.com/video-maker-tips">Video Maker Tips</a></li>
+					<li><a href="http://goanimate.com/video-maker-tips/how-to-make-a-video/">Help Videos</a></li>
+					<li><a href="http://goanimate.com/faq">FAQs</a></li>
+					<li><a href="http://goanimate.com/forums">Forums</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+
+		<div class="copyright">GoAnimate © 2021</div>
+	</div>
+</div>
+
+
+<div id="studio_container" style="display: none;">
+	<div id="studio_holder"><!-- Full Screen Studio -->
+		<div style="top: 50%; position: relative;">
+			This content requires the Adobe Flash Player 10.0.12. <a href="http://get.adobe.com/flashplayer/">Get Flash</a>
+		</div>
+	</div>
+</div>
+
+<!-- END OF PAGE STRUCTURE -->
+<!-- flex framework -->
+<div style="height:0;overflow:hidden;">
+	<object width="1" height="1">
+		<param name="MOVIE" value="http://lightspeed.goanimate.com/animation/729/Framework_Container.swf">
+		<param name="QUALITY" value="low">
+		<param name="SCALE" value="noborder">
+		<param name="wmode" value="transparent">
+		<embed src="http://web.archive.org/web/20121012225258oe_/http://lightspeed.goanimate.com/animation/729/Framework_Container.swf" wmode="transparent" width="1" height="1" quality="low">
+		
+	</object>
+</div>
+
+
+<div id="offer_container">
+</div>
+<script type="text/javascript">
+    </script>
+<div id="darkenScreenObject" style="display:none;">
+</div>
+<div style="display: none; position: absolute; margin-top: 0px; height: 355px; width: 550px; left: 230px; top: 0px; background: none; z-index: 50;" id="overlayObjectGlobal">
+<div id="overlayAlertBox" style="display:none; position: absolute;">
+   <div id="overlayAlertBoxTitle"><span id="overlayAlertBoxTitle"></span></div>
+   <div id="overlay_close" onclick="javascript:hideAlertBox();">&nbsp;</div>
+   <div class="overlaybody" style="text-align: left;float:left; padding: 10px 15px;">
+	<span id="alertBoxMessage"></span><br>
+	<div id="overlayAlertBoxBtn"><input type="button" value="&nbsp;&nbsp;OK&nbsp;&nbsp;" onclick="javascript:hideAlertBox();"></div>
+   </div>
+</div><div id="overlayHTMLBox" style="display:none; position: absolute;">
+   <div id="overlayHTMLInnerBox">
+      <div id="overlayHTMLBoxTitle"><span id="overlayHTMLBoxTitle"></span></div>
+      <div id="overlayHTML_close" onclick="javascript:hideHTMLBox();">×</div>
+      <div class="overlaybody" style="text-align: left;float:left; padding: 10px 15px;clear:both;width:440px;">
+	   <span id="HTMLBoxMessage"></span>
+      </div>
+      <div id="HTMLBoxTP" style="display:none"></div>
+   </div>
+</div>    <div id="overlayGeneral" style="display:none;width:700px;position:relative;">
+	<div class="overlay_header"><img src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/overlay/img_popup_top_700.png" height="37" width="700" onload="javascript:iePngFix(this,700,37)"></div>
+        <div style="float:left; margin:0px; padding: 0px; width:700px;">
+            <div style="float:left; margin:0px; padding: 0px; width:700px;">
+		<span id="tracker_id" style="display:none"></span>
+                <div class="overlay_header_title"><span id="OG_title"></span></div>
+                <div class="overlayClose" id="OG_close_btn"><a href="javascript:goVoid();" onclick="javascript:hideOG();"></a></div>
+                <div style="background-color:#fff; position:relative;float:left;width:700px;">
+		    <div id="OG_content"></div>
+                </div>
+                <div class="overlay_footer"><img src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/overlay/img_popup_bottom_700.png" height="30" width="700" onload="javascript:iePngFix(this,700,30)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "http://web.archive.org/web/20121012225258/https://ssl." : "http://web.archive.org/web/20121012225258/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/\
+javascript'%3E%3C/script%3E"));
+</script><script src="http://web.archive.org/web/20121012225258/https://ssl.google-analytics.com/ga.js" type="text/javascript"></script><script src="http://web.archive.org/web/20121012225258/http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2516970-1");
+pageTracker._setDomainName("none");
+
+//pageTracker._setCampSrcKey("goanimate.com");
+
+
+
+pageTracker._trackPageview();
+</script>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={"qacct":"p-66CFnJxwubvnE"};
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20121012225258js_/http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://web.archive.org/web/20121012225258im_/http://pixel.quantserve.com/pixel/p-66CFnJxwubvnE.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast">
+</noscript>
+<!-- End Quantcast tag -->
+<script type="text/javascript">
+	function logSendShareToGA() {
+	if (typeof pageTracker != 'undefined' && pageTracker)
+		pageTracker._trackPageview("/pageTracker/goals/reg/contactform");
+	}
+
+
+var uifrm_path = encodeURI(window.location.pathname);
+uifrm_path = uifrm_path.replace(/\//g, "%2F");
+uifrm = document.createElement("iframe");
+uifrm.setAttribute("name", "usu");
+uifrm.setAttribute("id", "usu");
+uifrm.setAttribute("src", "http://web.archive.org/web/20121012225258/http://usersignup.goanimate.com/tracking?v=1350082377&page=" + uifrm_path);
+uifrm.style.width = "1px";
+uifrm.style.height = "1px";
+uifrm.style.border = "0";
+uifrm.style.position = "absolute";
+document.body.appendChild(uifrm);
+
+</script><iframe name="usu" id="usu" src="http://web.archive.org/web/20121012225258/http://usersignup.goanimate.com/tracking?v=1350082377&amp;page=%2FGoAnimate-2012-Online%2Fpages%2Fhtml%2Flist.html" style="width: 1px; height: 1px; border: 0px; position: absolute;"></iframe><iframe name="usu" id="usu" src="http://web.archive.org/web/20121012225258/http://usersignup.goanimate.com/tracking?v=1350082377&amp;page=%2Fweb%2F20121012225258%2Fhttp:%2F%2Fgoanimate.com%2Fbusiness" style="width: 1px; height: 1px; border: 0px; position: absolute;" allow="autoplay 'self'; fullscreen 'self'"></iframe>
+
+
+<!--
+     FILE ARCHIVED ON 22:52:58 Oct 12, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:10:17 Jan 21, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  RedisCDXSource: 0.714
+  captures_list: 293.278
+  esindex: 0.011
+  PetaboxLoader3.resolve: 35.409
+  xauthn.identify: 112.361
+  xauthn.chkprivs: 90.512
+  CDXLines.iter: 15.404 (3)
+  load_resource: 839.714
+  exclusion.robots: 203.136
+  LoadShardBlock: 71.619 (3)
+  PetaboxLoader3.datanode: 838.416 (4)
+  exclusion.robots.policy: 203.121
+--><div id="growlfeedback_block" class="growlUI" style="display: none;">
+	<div id="growlnotify" style="display: none;"><img src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/common/feedback/tick.png" width="52" height="52" onload="javascript:iePngFix(this,52,52);"></div>
+	<div id="growlerror" style="display: block;"><img src="http://web.archive.org/web/20121012225258im_/http://lightspeed.goanimate.com/static/372/go/img/common/feedback/cross.png" width="52" height="52" onload="javascript:iePngFix(this,52,52);"></div>
+	<div class="growlcontent">
+	<div class="growltitle">Notification</div>
+	<div id="growlfeedback">GoAnimate 2012 Online is fully working!</div>
+	</div>
+</div>
+</body></html>
